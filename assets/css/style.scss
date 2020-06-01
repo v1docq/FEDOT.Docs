@@ -1,0 +1,60 @@
+---
+---
+
+@import "{{ site.theme }}";
+.wrapper {
+width:100%;
+margin:0 auto
+}
+
+section {
+ width:70%;
+ float:right;
+ padding-bottom:50px;
+}
+
+footer {
+    width: 30%;
+    float: left;
+    position: fixed;
+    bottom: 50px;
+}
+
+header {
+    width: 20%;
+    float: left;
+    position: fixed;
+}
+
+@media print, screen and (max-width: 1200px) {
+section {
+ width:100%;
+ padding-bottom:50px;
+}
+footer {
+ width:100%;
+ float:bottom;
+ position: relative;
+ bottom:50px;
+}
+header {
+ width:100%;
+  position: relative;
+}
+}
+@media print, screen and (max-height: 400px) {
+section {
+ width:100%;
+ padding-bottom:50px;
+}
+footer {
+ width:100%;
+ float:bottom;
+ position: relative;
+ bottom:50px;
+}
+header {
+ width:100%;
+  position: relative;
+}
+}
